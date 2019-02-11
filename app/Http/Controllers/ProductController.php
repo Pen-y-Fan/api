@@ -91,7 +91,7 @@ class ProductController extends Controller
      */
     public function update(Request $request, Product $product)
     {
-        $this->ProductUserCheck($product);
+        // $this->ProductUserCheck($product);
         $request['detail'] = $request->description;
         unset($request['description']);
         $product->update($request->all());
