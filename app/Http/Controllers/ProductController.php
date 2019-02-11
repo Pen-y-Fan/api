@@ -111,7 +111,7 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
-        $this->ProductUserCheck($product);
+        // $this->ProductUserCheck($product);
         $product->delete();
         return response(null, Response::HTTP_NO_CONTENT);
     }
