@@ -15,9 +15,10 @@ class ReviewResource extends JsonResource
     public function toArray($request)
     {
         return [
+            'id' => $this->id,
             'cutomer' => $this->customer,
             'body' => $this->review,
-            'star' => $this->star
+            'star' => $this->star,
         ];
     }
 }
